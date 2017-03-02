@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     let htmlFileURL = Bundle.main.url(forResource: "index", withExtension: "html")!
     webView.loadRequest(URLRequest(url: htmlFileURL))
     
-    timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { [unowned self] _ in
+    timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [unowned self] _ in
       self.webView.stringByEvaluatingJavaScript(from: script)
     }
   }
