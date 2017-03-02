@@ -12,7 +12,6 @@
         
         <div id="test"></div>
         
-        <script type="text/javascript" src="fetch.js"></script>
         <script type="text/javascript" src="zone.js"></script>
         <script type="text/javascript">
             const el = document.getElementById('test');
@@ -20,13 +19,19 @@
             window.setSignals = function (signals) {
                 el.innerText = JSON.stringify(signals);
                 
-                fetch(new URL('https://sd10.softwerk.se/develop/api/').href)
-                .then(function (response) {
-                      console.log('success');
-                      })
-                      .catch(function (error) {
-                             console.error(error);
-                             });
+                var xhr = new XMLHttpRequest();
+                
+                xhr.onload = function() {
+                    var body = 'response' in xhr ? xhr.response : xhr.responseText
+                };
+                
+                xhr.onerror = xhr.ontimeout = function() {
+                    alert('Network request failed')
+                };
+                
+                xhr.open('GET', 'https://sd10.softwerk.se/develop/api/', true);
+                
+                xhr.send(null);
             };
         </script>
     </body>

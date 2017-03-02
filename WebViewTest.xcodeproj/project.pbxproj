@@ -12,7 +12,6 @@
 		409D45B01E6716E3007A3099 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409D45AE1E6716E3007A3099 /* Main.storyboard */; };
 		409D45B21E6716E3007A3099 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409D45B11E6716E3007A3099 /* Assets.xcassets */; };
 		409D45B51E6716E3007A3099 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409D45B31E6716E3007A3099 /* LaunchScreen.storyboard */; };
-		409D45C51E671822007A3099 /* fetch.js in Resources */ = {isa = PBXBuildFile; fileRef = 409D45BE1E671822007A3099 /* fetch.js */; };
 		409D45C61E671822007A3099 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 409D45BF1E671822007A3099 /* index.html */; };
 		409D45CA1E671822007A3099 /* zone.js in Resources */ = {isa = PBXBuildFile; fileRef = 409D45C31E671822007A3099 /* zone.js */; };
 /* End PBXBuildFile section */
@@ -25,7 +24,6 @@
 		409D45B11E6716E3007A3099 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		409D45B41E6716E3007A3099 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		409D45B61E6716E3007A3099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		409D45BE1E671822007A3099 /* fetch.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = fetch.js; sourceTree = "<group>"; };
 		409D45BF1E671822007A3099 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		409D45C31E671822007A3099 /* zone.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = zone.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,7 +72,6 @@
 		409D45BC1E6717E5007A3099 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				409D45BE1E671822007A3099 /* fetch.js */,
 				409D45BF1E671822007A3099 /* index.html */,
 				409D45C31E671822007A3099 /* zone.js */,
 			);
@@ -146,7 +143,6 @@
 				409D45B01E6716E3007A3099 /* Main.storyboard in Resources */,
 				409D45C61E671822007A3099 /* index.html in Resources */,
 				409D45CA1E671822007A3099 /* zone.js in Resources */,
-				409D45C51E671822007A3099 /* fetch.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
